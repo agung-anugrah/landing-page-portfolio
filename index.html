@@ -1,53 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional developer portfolio template for software engineers, technical leads, and IT professionals." />
+  <title>Agung Here</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <div class="title">
-                <div class="text">
-                    <p class="p1">Hey, I'm Agung</p>
-                    <h1 class="t1"><span class="front">Full</span>stack</h1>
-                    <h1 class="t2">Developer</h1>
-                    <p class="p2">I’m a junior fullstack developer passionate about building modern, scalable, and user-focused web applications.</p>
-                    <div class="btn-title">
-                        <div class="btn-get"><a href="#container2" class="btn-get-a">Get Touch</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="photo">
-                <div class="border1">
-                    <div class="border2">
-                        <img src="img/people.jpg" alt="" class="img-people">
+  <!-- Desktop sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img id="profile-image" alt="" />
+      <div class="sidebar-name" id="sidebar-name"></div>
+      <div class="sidebar-title" id="sidebar-title"></div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+    <div class="sidebar-footer">
+      <div class="contact-links" id="contact-links"></div>
+    </div>
+  </aside>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container2" id="container2">
-        <div class="title2">
-            <h1 class="t3">Services</h1>
-            <p class="p3">This section explains the capabilities I have regarding the technology being developed.</p>
-        </div>
-        <div class="item">
-            <div class="card"><img src="img/nodejs.png" alt="" class="img-card"></div>
-            <div class="card php"><img src="img/php2.png" alt="" class="img-card"></div>
-            <div class="card python"><img src="img/python.png" alt="" class="img-card"></div>
-            <div class="card mysql"><img src="img/mysql.png" alt="" class="img-card"></div>
-            <div class="card mongo"><img src="img/mongo.png" alt="" class="img-card"></div>
-            <div class="card java"><img src="img/java.png" alt="" class="img-card"></div>
-        </div>
-    </div>
+  <!-- Mobile top nav -->
+  <nav class="mobile-nav" id="mobile-nav"></nav>
+
+  <!-- Main content (rendered by app.js) -->
+  <main class="main" id="main"></main>
+
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
 </body>
-<script>
-    window.onload = function () {
-        window.scrollTo(0, 0);
-    };
-</script>
 </html>
